@@ -16,12 +16,14 @@ public class WebDriverTest {
 
         driver = new ChromeDriver();
     }
-
+//    print hello world
     @Test
     public void print(){
         System.out.println("Hello World!");
+        System.out.println("This is upadte");
     }
 
+//    get title of the page
     @Test
     public void e2eTest(){
 
