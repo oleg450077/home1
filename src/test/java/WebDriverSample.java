@@ -9,12 +9,12 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 public class WebDriverSample {
 
     public static void main(String[]args) throws InterruptedException {
-//        String path = System.getProperty("user.dir") + "/src/test/resources/drivers/chromedriver";
-//        System.setProperty("webdriver.chrome.driver", path);
-        String path = System.getProperty("user.dir") + "/src/test/resources/drivers/geckodriver";
-        System.setProperty("webdriver.gecko.driver", path);
-//        WebDriver driver= new ChromeDriver();
-        WebDriver driver = new FirefoxDriver();
+        String path = System.getProperty("user.dir") + "/src/test/resources/drivers/chromedriver";
+        System.setProperty("webdriver.chrome.driver", path);
+//        String path = System.getProperty("user.dir") + "/src/test/resources/drivers/geckodriver";
+//        System.setProperty("webdriver.gecko.driver", path);
+        WebDriver driver= new ChromeDriver();
+//        WebDriver driver = new FirefoxDriver();
         driver.get("http://www.amazon.com");
         String title = driver.getTitle();
         Assertions.assertThat(title.toLowerCase().contains("amazon.com"));

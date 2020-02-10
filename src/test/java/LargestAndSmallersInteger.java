@@ -16,7 +16,6 @@ public class LargestAndSmallersInteger {
                 smallest= numbers[i];
 
             }
-
         }
         System.out.println("The initial array is :" + Arrays.toString(numbers));
         System.out.println("The largest number is :" + largest);
