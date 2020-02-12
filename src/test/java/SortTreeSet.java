@@ -8,7 +8,7 @@ public class SortTreeSet {
         int a[] = {77, 23, 4, 66, 99, 112, 45, 56, 39, 89};
         Set<Integer> s = new HashSet<Integer>();
         try {
-            for(int i = 0; i < 5; i++) {
+            for(int i = 0; i <a.length; i++) {
                 s.add(a[i]);
             }
             System.out.println(s);

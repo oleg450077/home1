@@ -21,6 +21,8 @@ public class StringManupulation {
         System.out.println(test.endsWith("m"));
         System.out.println(test.equals(test1));
 
+        System.out.println("****************************");
+
         String str= "Hello_World";
         System.out.println(str.replace("_","&"));
 
@@ -41,12 +43,6 @@ public class StringManupulation {
         for (int i = 0; i <=chars.length; i++){
             System.out.println(chars[i]);
         }
-        
-
-
-
-
-
 
     }
 }

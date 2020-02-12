@@ -6,7 +6,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
 
-public class WebDriverSample {
+public class WebDriverAmazon {
 
     public static void main(String[]args) throws InterruptedException {
         String path = System.getProperty("user.dir") + "/src/test/resources/drivers/chromedriver";
