@@ -1,0 +1,86 @@
+package Exercises;
+
+import javax.print.DocFlavor;
+import java.util.Arrays;
+import java.util.HashSet;
+import java.util.Set;
+import java.util.TreeSet;
+
+public class DuplicateElements {
+    public static void main(String[] args) {
+
+//        find duplicate elements in array
+
+
+//        String[] names = {"Java", "Ruby", "Python", "C++", "JavaScript", "Java"};
+// solution 1
+
+//        for (int i = 0; i < names.length; i++) {
+//            for (int j = i+1; j < names.length; j++) {
+//                if (names[i].equals(names[j])) {
+//                    System.out.println("duplicate is :" +names[i]);
+//                }
+//            }
+//        }
+//        System.out.println("*************");
+//// Solution 2
+//        Set<String> store = new HashSet<String>();
+//        for (String name : names){
+//            if (store.add(name) == false){
+//                System.out.println("Duplicate is :" + name);
+//            }
+//        }
+
+//        Set <String> tree_set= new TreeSet<String>(store);
+//        System.out.println(tree_set);
+
+//        String[] names = {"Java", "Ruby", "Ruby","Python", "C++", "JavaScript", "Java"};
+//
+//        for (int i=0; i<=names.length; i++){
+//            for (int j=i+1; j<names.length; j++){
+//                if (names[i]==names[j]){
+//                    System.out.println("Duplicate element in array is: " + names[i]);
+//                }
+//            }
+//        }
+//
+//        Set set = new HashSet();
+//        for (String name:names) {
+//            if (set.add(name)==false){
+//                System.out.println("Duplicate is the:" + name );
+//            }
+//        }
+
+        String[] names = {"Java", "Ruby","Python", "C++","Ruby", "JavaScript", "Java"};
+
+//        Solution 1
+        int count = 0;
+        for (int i=0; i<names.length; i++){
+            for (int j=i+1; j<names.length; j++){
+                if (names[i]==names[j]){
+                    System.out.println("Duplicate elements are : " + names[i]);
+                }
+            }
+
+        }
+
+//        Solution 2
+
+        Set <String> set = new HashSet<>();
+//        for (int j=0; j<names.length; j++){
+//            if (set.add(names[j])== false){
+//                System.out.println("Duplicate is :" + names[j]);
+//            }
+//        }
+
+        for (String name:names){
+            if (set.add(name)==false){
+                System.out.println("Duplicate :" + name);
+            }
+        }
+
+
+
+
+    }}
+
