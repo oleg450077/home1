@@ -19,15 +19,15 @@ public class FibonacciSeries {
 //        }
 
 
-            int a= 0, b=1, c, count=10;
+         int a=0, b=1, c, i, count=10;
+            System.out.print(a+" "+ b+" ");
 
-            System.out.print(a +" "+ b);
-
-            for (int j=2; j<count; j++ ){
+            for( i = 3; i<=10; i++){
                 c = a+b;
-                System.out.print(" "+ c);
+                System.out.print(c+" ");
                 a=b;
                 b=c;
+            }
             }
         }
 
@@ -35,5 +35,5 @@ public class FibonacciSeries {
 
 
 
-    }
+
 

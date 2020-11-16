@@ -6,8 +6,10 @@ public class CheckArrayEmpty {
 
 
     static void isEmptyArray(int[] a1, String[] a2) {
-        System.out.println(Arrays.toString(a1));
+
+        System.out.println(Arrays.toString(a1).isEmpty());
         System.out.println(Arrays.toString(a2).isEmpty());
+
     }
 
 

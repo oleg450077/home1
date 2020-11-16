@@ -9,7 +9,7 @@ public class PrintPrimeNumber {
 
     static void printPrimeNumbers (int num) {
         for (int i = 2; i <= num; i++) {
-            if (i % 1 == 0 || i%i==0) {
+            if (i % 1 == 0 || i % i == 0) {
                 System.out.println(i);
             }
 

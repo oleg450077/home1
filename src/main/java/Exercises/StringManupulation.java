@@ -2,7 +2,7 @@ package Exercises;
 
 public class StringManupulation {
 
-    public static <Char> void main(String[] args) {
+    public static void main(String[] args) {
 
         String test = "Selenium Web Driver";
         String test1 = "selenium web driver";
@@ -30,8 +30,8 @@ public class StringManupulation {
         System.out.println(test.replace("Web", "Space"));
         System.out.println(test);
         System.out.println(test.indexOf("e"));
-        System.out.println(test.indexOf("e", 2));
-        System.out.println(test.indexOf("e", test.indexOf("e", 2) + 1));
+        System.out.println(test.indexOf("e", 13));
+        System.out.println(test.indexOf("e", test.indexOf("e", 2)+2));
         System.out.println(test.matches(test1));
         System.out.println(test.substring(2, 8));
         String string = test.substring(2, 8);
@@ -67,7 +67,7 @@ public class StringManupulation {
         }
         System.out.println(reverse);
 
-        char[] chars = str3.toCharArray();
+        char[] chars = reverse.toCharArray();
         System.out.println(chars.length);
         for (int i=chars.length-1; i>=0; i--){
             System.out.print(chars[i]);

@@ -2,8 +2,8 @@ public class StringManupulation {
 
     public static <Char> void main(String[] args) {
 
-        String test = "There is something about Marry and John Mor";
-        String test1 = "There is something about Marry and John Mor";
+        String test = "There is something about Marry and John Moor";
+        String test1 = "There is something about Marry and John Moor";
 
         System.out.println(test.length());
         System.out.println(test.charAt(10));
@@ -18,7 +18,7 @@ public class StringManupulation {
         System.out.println(test.compareToIgnoreCase(test1));
         System.out.println(test+" "+test1);
         System.out.println(test.contains(test1));
-        System.out.println(test.endsWith("m"));
+        System.out.println(test.endsWith("r"));
         System.out.println(test.equals(test1));
 
         System.out.println("****************************");
@@ -40,7 +40,7 @@ public class StringManupulation {
         String str2 = "Selenium";
         char[] chars = str2.toCharArray();
         System.out.println(chars.length);
-        for (int i = 0; i <=chars.length; i++){
+        for (int i = 0; i <chars.length; i++){
             System.out.println(chars[i]);
         }
 

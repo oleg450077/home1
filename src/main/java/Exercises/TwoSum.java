@@ -1,6 +1,6 @@
 package Exercises;
 
-import java.lang.reflect.Array;
+import java.sql.Array;
 import java.util.Arrays;
 import java.util.List;
 //
@@ -33,21 +33,37 @@ public class TwoSum {
 //        }
 //    }
 //}
-     static void twoSum(int[] arr, int target){
+//     static void twoSum(int[] arr, int target){
+//
+//         for (int i=0; i<arr.length; i++){
+//             for (int j=i+1; j<arr.length; j++){
+//                 if (arr[i]+ arr[j] == target){
+//                     System.out.println(Arrays.asList(i,j));
+//                 }
+//             }
+//         }
+//
+//    }
+//
+//public static void main(String[] args) {
+//    int [] nums = {2, 4, 6, 8, 5, 14, 5};
+//    twoSum (nums, 10);
+//}
 
-         for (int i=0; i<arr.length; i++){
-             for (int j=i+1; j<arr.length; j++){
-                 if (arr[i]+ arr[j] == target){
-                     System.out.println(Arrays.asList(i,j));
-                 }
-             }
-         }
+    public static void main(String[] args) {
+        int[]numbers={2,6,7,3,8,11};
+        getIndexes(numbers,9);
 
     }
 
-public static void main(String[] args) {
-    int [] nums = {2, 4, 6, 8, 5, 14, 5};
-    twoSum (nums, 10);
-}
+    public static void getIndexes (int[]num, int target){
+        for (int i = 0; i< num.length; i++){
+            for (int j=i+1; j<num.length; j++){
+                if (num[i]+num[j] == target){
+                    System.out.println(Arrays.asList(i,j));
+                }
+            }
+        }
+    }
 
 }

@@ -20,7 +20,7 @@ public class PrintAllNumbers {
 
 
     public static void main(String[] args) {
-        funcPrintAllNumbers(0);
+        funcPrintAllNumbers(-10);
     }
 
 

@@ -7,7 +7,7 @@ package Exercises;
 2. arraylist
  */
 
-import org.yaml.snakeyaml.util.ArrayUtils;
+
 
 import java.util.*;
 
@@ -21,14 +21,19 @@ public class Exercise3 {
             if (nums[i]%2 == 0){
                 even.add(nums[i]);
             }
-            else if (nums[i]!=0){
+            else {
                 odd.add(nums[i]);
             }
 
         }
 
         Collections.sort(even, Collections.reverseOrder());
+
         System.out.println(even);
+
+        Collections.sort(odd, Collections.reverseOrder());
+
+        System.out.println(odd);
 
         even.addAll(odd);
         System.out.println(even);

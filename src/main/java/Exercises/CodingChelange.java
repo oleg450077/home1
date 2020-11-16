@@ -24,32 +24,61 @@ public class CodingChelange {
     public static void culculateClicksByDomain(String[] arr) {
 
 
-        int sum = 0, sum1 = 0, sum2 = 0, sum3 = 0, sum4 = 0, sum5 = 0;
+//        int sum = 0, sum1 = 0, sum2 = 0, sum3 = 0, sum4 = 0, sum5 = 0;
+//
+//            for (int i = 0; i < arr.length; i++) {
+//                String[] arr1 = arr[i].split(",");
+////            System.out.println(Arrays.toString(arr1));
+//                int number = Integer.parseInt(arr1[0]);
+////            System.out.println(number);
+//                String domain = arr1[1];
+//                if (domain.contains("com")) {
+//                    sum = sum + number;
+//                } else if (domain.contains("org")) {
+//                    sum1 = sum1 + number;
+//                } else if (domain.contains("sports")) {
+//                    sum2 = sum2 + number;
+//                } else if (domain.contains("uk")) {
+//                    sum3 = sum3 + number;
+//                } else if (domain.contains("yahoo")) {
+//                    sum4 = sum4 + number;
+//                }
+//            }
+//            System.out.println("com : " + sum);
+//            System.out.println("org :" + sum1);
+//            System.out.println("sports :" + sum2);
+//            System.out.println("uk :" + sum3);
+//            System.out.println("yahoo.com :" + sum4);
+//        }
 
-            for (int i = 0; i < arr.length; i++) {
-                String[] arr1 = arr[i].split(",");
-//            System.out.println(Arrays.toString(arr1));
-                int number = Integer.parseInt(arr1[0]);
-//            System.out.println(number);
-                String domain = arr1[1];
-                if (domain.contains("com")) {
-                    sum = sum + number;
-                } else if (domain.contains("org")) {
-                    sum1 = sum1 + number;
-                } else if (domain.contains("sports")) {
-                    sum2 = sum2 + number;
-                } else if (domain.contains("uk")) {
-                    sum3 = sum3 + number;
-                } else if (domain.contains("yahoo")) {
-                    sum4 = sum4 + number;
-                }
+        int sum1=0, sum2=0, sum3=0, sum4=0, sum5=0, sum6 = 0;
+        for (int i = 0; i <= arr.length-1; i++) {
+            String[] arr1 = arr[i].split(",");
+            System.out.println(Arrays.toString(arr1));
+            int clicks = Integer.parseInt(arr1[0]);
+
+            String domain=arr1[1];
+            if (domain.contains("com")){
+                sum1 = sum1+ clicks;
+
             }
-            System.out.println("com : " + sum);
-            System.out.println("org :" + sum1);
-            System.out.println("sports :" + sum2);
-            System.out.println("uk :" + sum3);
-            System.out.println("yahoo.com :" + sum4);
-        }
+            else if (domain.contains("org")){
+                sum2=sum2+clicks;
+            }
+
+            else if (domain.contains("uk")){
+                sum3=sum3+clicks;
+            }
+            else if (domain.contains("sports")){
+                sum4=sum4+clicks;
+            }
+            }
+        System.out.println("Com was clicked :" + sum1);
+        System.out.println("org was clicked :" + sum2);
+        System.out.println("uk was clicked :" + sum3);
+        System.out.println("sports was clicked :" + sum4);
+
+    }
 
 
 
@@ -71,4 +100,5 @@ public class CodingChelange {
 
         }
     }
+
 

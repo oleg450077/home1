@@ -1,8 +1,10 @@
 package Exercises;
 
+import java.util.Arrays;
+
 public class SwapTwoVars {
 
-//    How to swap to variables values?
+//    How to swap two variables values?
 
 //    public static void main(String[] args) {
 
@@ -17,14 +19,24 @@ public class SwapTwoVars {
 
     public static void main(String[] args) {
 
-        int a = 7;
-        int b = 9;
+//        int a = 7;
+//        int b = 9;
+//
+//        System.out.println("Before the swap :" + a + " and "+ b);
+//        int temp = a;
+//        a = b;
+//        b = temp;
+//        System.out.println("After the swap :" + a + " and "+ b);
 
-        System.out.println("Before the swap :" + a + " and "+ b);
-        int temp = a;
-        a = b;
-        b = temp;
-        System.out.println("After the swap :" + a + " and "+ b);
+            int a = 10;
+            int b = 20;
+        System.out.println(Arrays.asList(a,b));
+            int temp = a;
+            a = b;
+            b = temp;
+        System.out.println(Arrays.asList(a,b));
+
+
 
     }
 

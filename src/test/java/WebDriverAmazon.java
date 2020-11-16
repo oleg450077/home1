@@ -17,7 +17,7 @@ public class WebDriverAmazon {
 //        WebDriver driver = new FirefoxDriver();
         driver.get("http://www.amazon.com");
         String title = driver.getTitle();
-        Assertions.assertThat(title.toLowerCase().contains("amazon.com"));
+        Assertions.assertThat(title.toLowerCase()).contains("amazon.com");
         System.out.println("Amazon page is loaded");
         WebElement element = driver.findElement(By.xpath("//input[@id='twotabsearchtextbox']"));
         element.sendKeys("iphone 11");

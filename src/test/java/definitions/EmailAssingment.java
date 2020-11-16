@@ -4,6 +4,7 @@ import java.lang.reflect.Array;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
+import java.util.Scanner;
 
 public class EmailAssingment {
 
@@ -16,11 +17,14 @@ public class EmailAssingment {
 
 
     static void convertionMethod (List<String> li){
-            for (String string: li){
-
-
+            for (String str: li){
+                String str2 = str.substring(0,str.indexOf("@"));
+                if(!str2.matches(".*\\d.*")) {
+                    System.out.println(str2);
+                }
 
             }
+
     }
 
 }

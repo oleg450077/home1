@@ -17,22 +17,38 @@ public class SwapTwoArrayElem {
 //
 //    }
 
-    static void swapTwoArrayElements(int [] array, int index1, int index2){
-
-        int temp = 0;
-        temp = array[index1];
-        array[index1]= array[index2];
-        array[index2]=temp;
-        System.out.println(Arrays.toString(array));
-
-
-    }
+//    static void swapTwoArrayElements(int [] array, int index1, int index2){
+//
+//        int temp = 0;
+//        temp = array[index1];
+//        array[index1]= array[index2];
+//        array[index2]=temp;
+//        System.out.println(Arrays.toString(array));
+//
+//
+//    }
+//
+//    public static void main(String[] args) {
+//        int [] arr = {1,3,5,7,4,6,11,9, 87};
+//        int [] arr1 = new int[]{3,5,6,7};
+//        swapTwoArrayElements(arr, 3,5);
+//        swapTwoArrayElements(arr1, 1,2);
+//    }
 
     public static void main(String[] args) {
-        int [] arr = {1,3,5,7,4,6,11,9, 87};
-        int [] arr1 = new int[]{3,5,6,7};
-        swapTwoArrayElements(arr, 3,5);
-        swapTwoArrayElements(arr1, 1,2);
+        int [] arr = {1,2,3,4,5,6,7,8,9};
+        swapTwoElements(arr, 3,5);
+    }
+
+    static void swapTwoElements (int [] array, int num1, int num2){
+        System.out.println("Before the swap :" + Arrays.toString(array));
+        int temp = array[num1];
+        array[num1] = array[num2];
+        array[num2]= temp;
+        System.out.println("After the swap :" + Arrays.toString(array));
+
+
+
     }
 
 

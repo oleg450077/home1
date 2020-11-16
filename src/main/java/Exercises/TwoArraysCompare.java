@@ -33,28 +33,44 @@ public class TwoArraysCompare {
 //            getMatchingNumbers();
 //    }
 
-    static void getMatchingTimes(int[] a, int[] b){
-
-        List <Integer> list = new ArrayList<>();
-
-        for (int i=0; i<a.length; i++){
-            for (int j = 0; j<b.length; j++){
-                if (a[i]==b[j]){
-                    list.add(a[i]);
-
-                }
-            }
-        }
-        System.out.println(list);
-    }
-
+//    static void getMatchingTimes(int[] a, int[] b){
+//
+//        List <Integer> list = new ArrayList<>();
+//
+//        for (int i=0; i<a.length; i++){
+//            for (int j = 0; j<b.length; j++){
+//                if (a[i]==b[j]){
+//                    list.add(a[i]);
+//
+//                }
+//            }
+//        }
+//        System.out.println(list);
+//    }
+//
+//
+//    public static void main(String[] args) {
+//        int[] train1 = {230,300, 330, 400, 430, 400, 445, 500, 600};
+//        int [] train2 = {235, 310, 330, 410, 445, 600, 650, 700, 230};
+//
+//        getMatchingTimes (train1,train2);
+//
+//    }
 
     public static void main(String[] args) {
         int[] train1 = {230,300, 330, 400, 430, 400, 445, 500, 600};
-        int [] train2 = {235, 310, 330, 410, 445, 600, 650, 700, 230};
+        int [] train2 = {235, 310, 330, 410, 445, 600, 650, 700};
+        compareTwoTrains(train1, train2);
+    }
 
-        getMatchingTimes (train1,train2);
-
+    static void compareTwoTrains(int[] arr1, int[]arr2){
+        for (int i=0; i< arr1.length; i++){
+            for (int j=0; j< arr2.length; j++){
+                if (arr1[i] == arr2[j]){
+                    System.out.println(Arrays.asList(i,j));
+                }
+            }
+        }
     }
 
 

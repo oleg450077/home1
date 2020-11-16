@@ -18,7 +18,7 @@ public class Exercises2 {
         list.add(90);
         list.add(12);
         System.out.println("Lenght of Linked list is :"+list.size());
-        System.out.println("Middle element of Linked List is :" + list.get((list.size()/2)+1));
+        System.out.println("Middle element of Linked List is :" + list.get((list.size()/2)));
 
 
     }

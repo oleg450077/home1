@@ -1,10 +1,7 @@
 package coreJava;
 
-import org.yaml.snakeyaml.util.ArrayUtils;
-
-import java.lang.reflect.Array;
-
-import java.util.*;
+import java.util.ArrayList;
+import java.util.List;
 
 public class Arrays {
     public static void main(String[] args) {

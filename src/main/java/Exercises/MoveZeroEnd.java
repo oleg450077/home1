@@ -44,20 +44,35 @@ int [] output = {2,1,7,6,0,0,0,0}
 
     static void moveZerosToEnd(int[]array){
 
+//        int a=0;
+//        for (int j=0; j<array.length; j++){
+//        for (int i = 0; i<array.length-1; i++){
+//            if (array[i]!=0){
+//                continue;
+//            }
+//            else if (array[i]==0){
+//                a= array[i];
+//                array[i]=array[i+1];
+//                array[i+1]= a;
+//            }
+//        }
+
+//    }
+
         int a=0;
-        for (int j=0; j<array.length; j++){
-        for (int i = 0; i<array.length-1; i++){
-            if (array[i]!=0){
-                continue;
-            }
-            else if (array[i]==0){
-                a= array[i];
-                array[i]=array[i+1];
-                array[i+1]= a;
+        for (int i = 0; i < array.length; i++){
+            for (int j = 0; j < array.length-1; j++){
+                if (array[j]!= 0){
+                    continue;
+                }
+                else if (array[j] == 0){
+                    a = array[j];
+                    array[j] = array[j+1];
+                    array [j+1] = a;
+                }
             }
         }
 
-    }
         System.out.println(Arrays.toString(array));}
 
     public static void main(String[] args) {
